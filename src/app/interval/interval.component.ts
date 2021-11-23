@@ -47,7 +47,8 @@ export class IntervalComponent implements OnInit {
   }
 
   getText(){
-    return ( this.minutes<10? '0' + this.minutes : this.minutes) + ":" + (this.fracSeconds<10? '0' + this.fracSeconds : this.fracSeconds)
+   let msg = (this.minutes<10? '0' + this.minutes : this.minutes) + ":" + (this.fracSeconds<10? '0' + this.fracSeconds : this.fracSeconds)
+   return msg.trim()
   }
 
 
