@@ -1,0 +1,23 @@
+<div class="container  justify-content-center mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-5 ">
+            <div style="font-size: 200px; color: crimson; font-weight: bolder;">
+                {{getText()}} </div>
+            <div class="row ">
+
+
+
+                <input class="col form-control mb-2" [(ngModel)]="givenMinutes" name="seconds" id="seconds" />
+
+                <div class="col fs-1 form-label">minutes</div>
+            </div>
+            <div class="row">
+
+
+                <button [disabled]="started" class="col btn btn-primary me-2" (click)="start()">Start</button>
+                <button [disabled]="!started" class="col btn btn-danger" (click)="stop()">Stop</button>
+
+
+            </div>
+        </div>
+    </div>
